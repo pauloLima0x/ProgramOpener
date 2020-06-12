@@ -17,7 +17,7 @@ echo "2 - Second program name"
 # Receiving the user input.
 read choice
 
-#Depending on the user's choice, run the program script/bin as in the example below:
+#Depending on the user's choice, run the program/script as in the example below:
 #/programOrScriptPath/./programOrScript
 
 if [ $choice -eq 1 ] then
