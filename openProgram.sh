@@ -9,17 +9,27 @@
  #Maintenance: V1 - Creation of the program.
 
 #------------------
-echo "Escolha um programa"
+echo "Please, choose a program"
 echo
-echo "1 - Android studio"
-echo "2 - Audacious"
+#Insert the name of the programs below. Add more if you want it.
+echo "1 - First program name"
+echo "2 - Second program name"
+# Receiving the user input.
 read choice
-if [ $choice -eq 1 ]
-then
-/opt/android-studio/bin/./studio.sh
-elif [ $choice -eq 2 ]
-then
-/usr/bin/./audacious
+
+#Depending on the user's choice, run the program script/bin as in the example below:
+#/programOrScriptPath/./programOrScript
+
+if [ $choice -eq 1 ] then
+
+  /programOrScriptPath/./programOrScript
+
+elif [ $choice -eq 2 ] then
+
+  /programOrScriptPath/./programOrScript
+
 else
-  echo "Opção inválida"
-fi 
+
+  echo "Invalid option"
+
+fi
